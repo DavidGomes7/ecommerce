@@ -1,13 +1,14 @@
 <?php 
 
 namespace Hcode;
+use \Rain\Tpl;
 
 
 class PageAdmin extends Page {
 
 	public function __construct($opts = array(), $tpl_dir = "/Udemy/PHP/ecommerce/views/admin/") {
 
-		parent::__contruct($opts, $tpl_dir);
+		parent::__construct($opts, $tpl_dir);
 
 	}
 }

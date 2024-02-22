@@ -2,13 +2,14 @@
 
 require_once("vendor/autoload.php");
 
-use \Slim\Slim;
+//use \Slim\Slim;
 use \Hcode\Page;
 use \Hcode\PageAdmin;
 
 //echo $_SERVER["DOCUMENT_ROOT"];
 
-$app = new Slim();
+//$app = new Slim();
+$app = new \Slim\App;
 
 $app->config('debug', true);
 
@@ -20,6 +21,7 @@ $app->get('/', function() {
 
 });
 
+
 $app->get('/admin', function() {
     
 	$page = new PageAdmin();
@@ -28,6 +30,8 @@ $app->get('/admin', function() {
 
 });
 
+
 $app->run();
+
 
  ?>
