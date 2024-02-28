@@ -1,5 +1,7 @@
 <?php 
 
+//Usando a Connection.php ao invés desta
+
 namespace Hcode\DB;
 
 class Sql {
